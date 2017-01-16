@@ -1,7 +1,7 @@
 //rem布局
 function initSize() {
-	var _h = document.documentElement.clientHeight||document.body.clientHeight;
-	var _size=_h/675*100;
+	var _h = document.documentElement.clientWidth||document.body.clientWidth;
+	var _size=_h/1280*100;
 	document.documentElement.style.fontSize=_size+"px";
 }
 
@@ -50,11 +50,11 @@ function main(){
 function over() {
 	$(".aboutme a").on("mouseover",function () {
 		$($(this).children("span")).stop();
-		$($(this).children("span")).animate({width: '130'},300);
+		$($(this).children("span")).animate({width: '130'},100);
 	});
 	$(".aboutme a").on("mouseout",function () {
 		$($(this).children("span")).stop();
-		$($(this).children("span")).animate({width: '0'},300);
+		$($(this).children("span")).animate({width: '0'},200);
 	});
 }
 $(function(){
