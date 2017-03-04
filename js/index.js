@@ -57,6 +57,13 @@ function over() {
 		$($(this).children("span")).animate({width: '0'},200);
 	});
 }
+//实现滚动条无法滚动
+var mo=function(e){e.preventDefault();};
+/***禁止滑动***/
+function stopsc(){
+	document.body.style.overflow='hidden';        
+    document.addEventListener("touchmove",mo,false);//禁止页面滑动
+}
 $(function(){
 	initSize();
 	main();
@@ -64,6 +71,6 @@ $(function(){
 	setTimeout(function() {
 		bgloop();
 	},5000)
-	
+	stopsc();
 })
 
