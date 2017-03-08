@@ -22,10 +22,19 @@
 			.aboutme{
 				font-size: 16px;
 			}
+			canvas{
+				position: absolute;
+				right: 0;
+				bottom:0;
+				height: 50%;
+				display: block;
+			}
 		}
 	</style>
 </head>
 <body>
+	<canvas id="canvas" width="400" height="700"> </canvas>
+
 	<img id="bg" src="images/bg-desktop.jpg">
 	<div class="content">
 		<div class="aboutme">
@@ -46,5 +55,6 @@
 	</div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

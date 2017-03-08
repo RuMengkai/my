@@ -7,3 +7,10 @@ body{background: #000}
 .aboutme p>span{display: inline-block; width:120px;text-align: right;margin-right: 20px}
 .aboutme a{color: #fff;position:relative;}
 .aboutme a span{width:0px;border-bottom:2px solid #fff;height50px;display:block;margin-left:139px;margin-top: -6px;margin-bottom: 6px}
+canvas{
+	right: 0;
+	top:0;
+	height: 100%;
+	position: absolute;
+	display: block;
+}
